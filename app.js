@@ -97,7 +97,7 @@ const defaultProducts = [
         name: "Eudora Siàge Hair-Plastia Máscara Capilar 250g",
         brand: "Eudora",
         category: "mascara",
-        price: 59.90,
+        price: 40.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E01644/54a3558b-8a62-43ae-86b3-2e67d158e422-eud-siage-novas-fotos-hair-plastia-mascara.jpg",
         description: "Seus cabelos estão ásperos e porosos, precisando de uma plástica capilar para recuperar a maciez e o brilho? A Máscara Capilar Siàge Hair-Plastia é um tratamento intensivo que corrige as lesões da fibra capilar e promove uma hidratação tridimensional, que recupera a beleza dos fios desde a primeira aplicação."
@@ -107,7 +107,7 @@ const defaultProducts = [
         name: "Máscara Capilar Siàge Cauterização dos Lisos 250g",
         brand: "Eudora",
         category: "mascara",
-        price: 59.90,
+        price: 40.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E51749/EUD_51749_SIAGE_CAUTERIZACAO-LISOS_MASCARA-CAPILAR_FRONTAL_01.jpg",
         description: "Seus fios lisos ou alisados estão precisando de um tratamento intensivo? A Máscara Capilar Siàge Cauterização dos Lisos repara os danos causados pela química ou pelas fontes de calor. Seus fios ficam 3x mais lisos, anti-frágeis e protegidos, logo na primeira aplicação."
@@ -117,7 +117,7 @@ const defaultProducts = [
         name: "Máscara Capilar Siàge Reconstrói Os Fios 250g",
         brand: "Eudora",
         category: "mascara",
-        price: 59.90,
+        price: 40.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53521/SIAGE_MASCARA_CAPILAR_RECONSTROI_OS_FIOS_E53521_PRINCIPAL_1.jpg",
         description: "A Máscara Siàge Reconstrói os Fios age como um verdadeiro Creme de Reconstrução Capilar, entregando um tratamento intensivo para recuperar os cabelos de forma imediata."
@@ -127,7 +127,7 @@ const defaultProducts = [
         name: "Máscara Capilar Siàge Acelera o Crescimento 250g",
         brand: "Eudora",
         category: "mascara",
-        price: 59.90,
+        price: 40.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
         description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm in 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
@@ -293,7 +293,7 @@ function init() {
                 name: "Eudora Siàge Hair-Plastia Máscara Capilar 250g",
                 brand: "Eudora",
                 category: "mascara",
-                price: 59.90,
+                price: 40.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E01644/54a3558b-8a62-43ae-86b3-2e67d158e422-eud-siage-novas-fotos-hair-plastia-mascara.jpg",
                 description: "Seus cabelos estão ásperos e porosos, precisando de uma plástica capilar para recuperar a maciez e o brilho? A Máscara Capilar Siàge Hair-Plastia é um tratamento intensivo que corrige as lesões da fibra capilar e promove uma hidratação tridimensional, que recupera a beleza dos fios desde a primeira aplicação."
@@ -303,7 +303,7 @@ function init() {
                 name: "Máscara Capilar Siàge Cauterização dos Lisos 250g",
                 brand: "Eudora",
                 category: "mascara",
-                price: 59.90,
+                price: 40.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E51749/EUD_51749_SIAGE_CAUTERIZACAO-LISOS_MASCARA-CAPILAR_FRONTAL_01.jpg",
                 description: "Seus fios lisos ou alisados estão precisando de um tratamento intensivo? A Máscara Capilar Siàge Cauterização dos Lisos repara os danos causados pela química ou pelas fontes de calor. Seus fios ficam 3x mais lisos, anti-frágeis e protegidos, logo na primeira aplicação."
@@ -313,7 +313,7 @@ function init() {
                 name: "Máscara Capilar Siàge Reconstrói Os Fios 250g",
                 brand: "Eudora",
                 category: "mascara",
-                price: 59.90,
+                price: 40.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53521/SIAGE_MASCARA_CAPILAR_RECONSTROI_OS_FIOS_E53521_PRINCIPAL_1.jpg",
                 description: "A Máscara Siàge Reconstrói os Fios age como um verdadeiro Creme de Reconstrução Capilar, entregando um tratamento intensivo para recuperar os cabelos de forma imediata."
@@ -323,7 +323,7 @@ function init() {
                 name: "Máscara Capilar Siàge Acelera o Crescimento 250g",
                 brand: "Eudora",
                 category: "mascara",
-                price: 59.90,
+                price: 40.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
                 description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm em 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
@@ -339,6 +339,15 @@ function init() {
                 } else {
                     storedProducts.push(newP);
                 }
+            }
+        });
+
+        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
+        const maskIds = [10, 11, 12, 13];
+        maskIds.forEach(id => {
+            const idx = storedProducts.findIndex(p => p.id === id);
+            if (idx > -1) {
+                storedProducts[idx].price = 40.00;
             }
         });
 
