@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Catálogo online de produtos de cabelo Eudora e outras marcas de cosméticos com pedidos direto no WhatsApp.">
+    <title>Bella Beauty | Catálogo Eudora & Cosméticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Barra de Navegação -->
+    <header>
+        <div class="nav-bar">
+            <div class="logo-container">
+                <!-- SVG de Logotipo Elegante (Silhueta de Beleza/Flores) -->
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M50 90C72.0914 90 90 72.0914 90 50C90 27.9086 72.0914 10 50 10C27.9086 10 10 27.9086 10 50C10 72.0914 27.9086 90 50 90Z"
+                        stroke="#d4af37" stroke-width="2" />
+                    <path
+                        d="M50 25C50 25 35 45 42 62C47 74 60 75 55 60C50 45 65 30 65 30C65 30 52 48 57 60C62 72 73 65 67 52C61 40 50 25 50 25Z"
+                        fill="#d4af37" />
+                </svg>
+                <div>
+                    <span class="logo-text">Giordana Livia</span>
+                    <span class="logo-sub">Cosméticos & Beleza</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-icon" id="admin-panel-btn" title="Painel de Controle (Vendedora)">
+                    <!-- SVG de Engrenagem (Admin) -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="btn-icon" id="cart-toggle-btn" title="Ver Carrinho">
+                    <!-- SVG de Bolsa de Compras -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Banner Heroico -->
+        <div class="hero-banner">
+            <div class="banner-wrapper">
+                <img src="banner.png" alt="Banner Bella Beauty" class="banner-img">
+                <div class="banner-content">
+                    <h1 class="banner-title">Beleza e Brilho para Seus Cabelos</h1>
+                    <p class="banner-subtitle">Explore a linha completa Eudora Siàge e outros cosméticos premium.
+                        Adicione ao carrinho e encomende pelo WhatsApp!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Busca e Filtros -->
+    <section class="search-filter-section">
+        <div class="search-box">
+            <input type="text" id="search-input" class="search-input"
+                placeholder="O que você está procurando hoje? (ex: Shampoo, Siàge, Cauterização...)">
+            <button class="search-btn" id="search-btn">Buscar</button>
+        </div>
+
+        <div class="filter-container">
+            <!-- Filtro de Categorias -->
+            <div>
+                <h3 class="filter-title">Categorias</h3>
+                <div class="filter-group" id="category-filters">
+                    <button class="filter-chip active" data-category="all">Todos os Produtos</button>
+                    <button class="filter-chip" data-category="shampoo">Shampoo</button>
+                    <button class="filter-chip" data-category="condicionador">Condicionador</button>
+                    <button class="filter-chip" data-category="mascara">Máscara Capilar</button>
+                    <button class="filter-chip" data-category="oleo">Óleos & Finalizadores</button>
+                    <button class="filter-chip" data-category="kit">Kits Completos</button>
+                </div>
+            </div>
+
+            <!-- Filtro de Marcas -->
+            <div>
+                <h3 class="filter-title">Marcas</h3>
+                <div class="filter-group" id="brand-filters">
+                    <button class="filter-chip active" data-brand="all">Todas</button>
+                    <button class="filter-chip" data-brand="Eudora">Eudora</button>
+                    <button class="filter-chip" data-brand="Natura">Natura</button>
+                    <button class="filter-chip" data-brand="O Boticário">O Boticário</button>
+                    <button class="filter-chip" data-brand="Outros">Outros</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal - Listagem de Produtos -->
+    <main>
+        <div class="section-header">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <span class="results-count" id="results-count">Mostrando 0 produtos</span>
+        </div>
+
+        <!-- Grid de Cards de Produto -->
+        <div class="product-grid" id="product-grid">
+            <!-- Renderizado dinamicamente pelo JavaScript -->
+        </div>
+    </main>
+
+    <!-- Gaveta Lateral do Carrinho -->
+    <div class="drawer-backdrop" id="cart-drawer-backdrop">
+        <div class="drawer">
+            <div class="drawer-header">
+                <h3 class="drawer-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    Meu Carrinho
+                </h3>
+                <button class="drawer-close" id="cart-drawer-close">&times;</button>
+            </div>
+
+            <div class="drawer-body" id="cart-items-container">
+                <!-- Itens do Carrinho via JS -->
+            </div>
+
+            <div class="drawer-footer">
+                <div class="cart-summary-row">
+                    <span>Itens selecionados:</span>
+                    <span id="cart-total-qty">0</span>
+                </div>
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span id="cart-total-val">R$ 0,00</span>
+                </div>
+                <button class="btn btn-whatsapp" id="checkout-whatsapp-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.638 1.977 14.167 1.05 11.54 1.05 6.104 1.05 1.68 5.421 1.677 10.85c-.001 1.732.46 3.42 1.336 4.908l-.994 3.633 3.738-.971c1.5.82 3.12 1.25 4.79 1.25zM17.65 15c-.296-.148-1.75-.864-2.022-.963-.272-.099-.47-.148-.667.148-.198.297-.766.964-.94 1.162-.172.198-.346.223-.642.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.667-1.61-.914-2.203-.24-.579-.484-.5-.667-.51-.173-.008-.371-.01-.568-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.75-.717 1.998-1.41.248-.693.248-1.288.173-1.411-.074-.124-.272-.198-.57-.347z" />
+                    </svg>
+                    Confirmar Pedido via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalhes do Produto -->
+    <div class="modal-backdrop" id="detail-modal-backdrop">
+        <div class="modal-container">
+            <button class="modal-close" id="detail-modal-close">&times;</button>
+            <div id="detail-modal-content">
+                <!-- Renderizado dinamicamente pelo JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Painel de Admin (Vendedora) -->
+    <div class="modal-backdrop" id="admin-modal-backdrop">
+        <div class="modal-container" style="max-width: 750px;">
+            <button class="modal-close" id="admin-modal-close">&times;</button>
+
+            <h3 class="modal-title-admin">Painel Administrativo do Catálogo</h3>
+
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-target="admin-tab-list">Lista de Produtos</button>
+                <button class="admin-tab" data-target="admin-tab-add" id="tab-form-title">Cadastrar Novo
+                    Produto</button>
+                <button class="admin-tab" data-target="admin-tab-config">Configurações</button>
+            </div>
+
+            <!-- Painel 1: Lista de Produtos -->
+            <div class="admin-content-pane active" id="admin-tab-list">
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Produto</th>
+                                <th>Marca</th>
+                                <th>Preço</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-products-table-body">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Painel 2: Cadastrar / Editar Produto -->
+            <div class="admin-content-pane" id="admin-tab-add">
+                <form id="admin-product-form">
+                    <input type="hidden" id="edit-product-id" value="">
+
+                    <div class="form-group">
+                        <label class="form-label" for="prod-name">Nome do Produto *</label>
+                        <input type="text" id="prod-name" class="form-input"
+                            placeholder="Ex: Shampoo Eudora Siàge Cauterização dos Fios 250ml" required>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label class="form-label" for="prod-brand">Marca *</label>
+                            <select id="prod-brand" class="form-input" required>
+                                <option value="Eudora">Eudora</option>
+                                <option value="Natura">Natura</option>
+                                <option value="O Boticário">O Boticário</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="prod-category">Categoria *</label>
+                            <select id="prod-category" class="form-input" required>
+                                <option value="shampoo">Shampoo</option>
+                                <option value="condicionador">Condicionador</option>
+                                <option value="mascara">Máscara Capilar</option>
+                                <option value="oleo">Óleos & Finalizadores</option>
+                                <option value="kit">Kits Completos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label class="form-label" for="prod-price">Preço (R$) *</label>
+                            <input type="number" step="0.01" id="prod-price" class="form-input" placeholder="Ex: 45.90"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="prod-badge">Etiqueta/Destaque</label>
+                            <input type="text" id="prod-badge" class="form-input"
+                                placeholder="Ex: Promoção, Mais Vendido, Lançamento">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="prod-img">Link da Imagem do Produto (URL) ou deixe em branco para
+                            imagem padrão</label>
+                        <input type="url" id="prod-img" class="form-input" placeholder="https://exemplo.com/imagem.png">
+                        <div class="preview-container">
+                            <img src="" id="prod-img-preview" class="preview-img" alt="Sem pré-visualização">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="prod-desc">Descrição do Produto</label>
+                        <textarea id="prod-desc" class="form-input" rows="3"
+                            placeholder="Insira detalhes do produto, benefícios, modo de usar..."></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <button type="submit" class="btn btn-primary" id="btn-save-product">Salvar Produto</button>
+                        <button type="button" class="btn btn-outline" id="btn-cancel-edit"
+                            style="display: none;">Cancelar Edição</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Painel 3: Configurações Gerais -->
+            <div class="admin-content-pane" id="admin-tab-config">
+                <div class="form-group">
+                    <label class="form-label" for="cfg-whatsapp">Seu Número do WhatsApp (Para receber pedidos) *</label>
+                    <input type="text" id="cfg-whatsapp" class="form-input"
+                        placeholder="Ex: 5599999999999 (Código do país + DDD + Número)" required>
+                    <small style="color: var(--text-light); margin-top: 0.2rem; display: block;">Digite apenas números,
+                        incluindo o 55 da área do Brasil.</small>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0;">
+
+                <h4 style="margin-bottom: 0.5rem; font-weight: 600;">Backup do Catálogo</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Você pode exportar a
+                    lista de produtos atual para salvar como backup, ou importar produtos cadastrados em outro
+                    navegador.</p>
+
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-outline" id="btn-export-json">Exportar Catálogo (JSON)</button>
+                    <label class="btn btn-outline"
+                        style="cursor: pointer; display: flex; align-items: center; text-align: center;">
+                        Importar Catálogo (JSON)
+                        <input type="file" id="btn-import-json" accept=".json" style="display: none;">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão de Carrinho Flutuante para Mobile -->
+    <button class="floating-cart-btn" id="floating-cart-btn" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-count" id="floating-cart-count">0</span>
+    </button>
+
+    <!-- Notificações Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
