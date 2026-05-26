@@ -64,33 +64,73 @@ const defaultProducts = [
     },
     {
         id: 7,
-        name: "Óleo Capilar Elixir Siàge Cauterização dos Fios 60ml",
-        brand: "Eudora",
+        name: "Óleo Nutritivo Ox Nutre 120Ml",
+        brand: "OX",
         category: "oleo",
-        price: 52.90,
+        price: 20.00,
         badge: "",
-        image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=500&auto=format&fit=crop&q=80",
-        description: "O Elixir Capilar Cauterização dos Fios protege contra temperaturas de até 230°C (secador/chapinha), combate instantaneamente o frizz, repara as pontas duplas e deixa o cabelo com toque aveludado e brilho espetacular."
+        image: "https://acdn-us.mitiendanube.com/stores/003/130/602/products/7-4a1b8fcf561f8688c417110303185640-640-0.webp",
+        description: "O Óleo OX Nutre é ideal para cabelos ressecados e sem brilho. Nutre os fios, controla o frizz e sela as cutículas proporcionando cabelos nutridos sem pesar. Possui óleos essenciais de cálamo, mirra e oliva."
     },
     {
         id: 8,
-        name: "Máscara de Nutrição Natura Lumina Cabelos Secos 250g",
-        brand: "Natura",
-        category: "mascara",
-        price: 59.90,
+        name: "Combo Eudora Siàge Revela os Cachos (Shampoo 250ml + Condicionador 200ml)",
+        brand: "Eudora",
+        category: "kit",
+        price: 45.00,
         badge: "",
-        image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&auto=format&fit=crop&q=80",
-        description: "A Máscara Natura Lumina nutre profundamente os cabelos secos, repondo lipídeos e massa capilar. Fórmula avançada com biotecnologia pró-teia que reconstrói a fibra capilar de dentro para fora."
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/6/eudora-siage-revela-os-cachos-shampoo-250ml-35805-001099182103445831.jpg",
+        description: "O Combo Siàge Revela os Cachos limpa suavemente os fios e condiciona profundamente, proporcionando cachos definidos, macios, com balanço natural e 3x menos frizz. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
     },
     {
         id: 9,
-        name: "Shampoo Match Patrulha do Frizz O Boticário 250ml",
-        brand: "O Boticário",
-        category: "shampoo",
-        price: 39.90,
+        name: "Pantene Pro-V Miracles Óleo Capilar Milagroso Queratina Nutrição, Brilho E Proteção 95ml",
+        brand: "Pantene",
+        category: "oleo",
+        price: 20.00,
         badge: "Oferta",
-        image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=500&auto=format&fit=crop&q=80",
-        description: "O Shampoo Match Patrulha do Frizz limpa os fios suavemente, criando uma película protetora que blinda contra a umidade por até 48 horas. Ideal para cabelos indisciplinados e com frizz."
+        image: "https://m.media-amazon.com/images/I/51EGAzMzgnL._AC_SL1200_.jpg",
+        description: "Pantene Pro-V Miracles Óleo Capilar Milagroso, uma experiência única de Pantene. Brilho imbatível para o seu dia a dia. Nutrição, brilho imbatível e proteção em um só Óleo Capilar que pode ser usado como finalizador e/ou leave-in. Contém 3x mais concentração de PRO-VITAMINA B5"
+    },
+    {
+        id: 10,
+        name: "Eudora Siàge Hair-Plastia Máscara Capilar 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 59.90,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E01644/54a3558b-8a62-43ae-86b3-2e67d158e422-eud-siage-novas-fotos-hair-plastia-mascara.jpg",
+        description: "Seus cabelos estão ásperos e porosos, precisando de uma plástica capilar para recuperar a maciez e o brilho? A Máscara Capilar Siàge Hair-Plastia é um tratamento intensivo que corrige as lesões da fibra capilar e promove uma hidratação tridimensional, que recupera a beleza dos fios desde a primeira aplicação."
+    },
+    {
+        id: 11,
+        name: "Máscara Capilar Siàge Cauterização dos Lisos 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 59.90,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E51749/EUD_51749_SIAGE_CAUTERIZACAO-LISOS_MASCARA-CAPILAR_FRONTAL_01.jpg",
+        description: "Seus fios lisos ou alisados estão precisando de um tratamento intensivo? A Máscara Capilar Siàge Cauterização dos Lisos repara os danos causados pela química ou pelas fontes de calor. Seus fios ficam 3x mais lisos, anti-frágeis e protegidos, logo na primeira aplicação."
+    },
+    {
+        id: 12,
+        name: "Máscara Capilar Siàge Reconstrói Os Fios 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 59.90,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53521/SIAGE_MASCARA_CAPILAR_RECONSTROI_OS_FIOS_E53521_PRINCIPAL_1.jpg",
+        description: "A Máscara Siàge Reconstrói os Fios age como um verdadeiro Creme de Reconstrução Capilar, entregando um tratamento intensivo para recuperar os cabelos de forma imediata."
+    },
+    {
+        id: 13,
+        name: "Máscara Capilar Siàge Acelera o Crescimento 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 59.90,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
+        description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm in 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
     }
 ];
 
@@ -103,7 +143,7 @@ let cart = JSON.parse(localStorage.getItem("bella_beauty_cart")) || [];
 let activeCategory = "all";
 let activeBrand = "all";
 let searchQuery = "";
-let whatsappNumber = localStorage.getItem("bella_beauty_whatsapp") || "5599999999999"; // Substituir com o seu real
+let whatsappNumber = localStorage.getItem("bella_beauty_whatsapp") || "5586999707484"; // Substituir com o seu real
 
 // Seleção de Elementos DOM
 const productGrid = document.getElementById("product-grid");
@@ -230,6 +270,77 @@ function init() {
                 storedProducts.push(resgateImediatoProduct);
             }
         }
+
+        // Migração: atualizar ID 8 para Combo Eudora Siàge Revela os Cachos se for o antigo Natura Lumina
+        const idx8 = storedProducts.findIndex(p => p.id === 8);
+        if (idx8 > -1 && (storedProducts[idx8].name.includes("Natura Lumina") || storedProducts[idx8].name.includes("Lumina"))) {
+            storedProducts[idx8] = {
+                id: 8,
+                name: "Combo Eudora Siàge Revela os Cachos (Shampoo 250ml + Condicionador 200ml)",
+                brand: "Eudora",
+                category: "kit",
+                price: 45.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/6/eudora-siage-revela-os-cachos-shampoo-250ml-35805-001099182103445831.jpg",
+                description: "O Combo Siàge Revela os Cachos limpa suavemente os fios e condiciona profundamente, proporcionando cachos definidos, macios, com balanço natural e 3x menos frizz. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
+            };
+        }
+
+        // Migração: adicionar as novas máscaras (IDs 10, 11, 12, 13) se não existirem
+        const newProductsToAdd = [
+            {
+                id: 10,
+                name: "Eudora Siàge Hair-Plastia Máscara Capilar 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 59.90,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E01644/54a3558b-8a62-43ae-86b3-2e67d158e422-eud-siage-novas-fotos-hair-plastia-mascara.jpg",
+                description: "Seus cabelos estão ásperos e porosos, precisando de uma plástica capilar para recuperar a maciez e o brilho? A Máscara Capilar Siàge Hair-Plastia é um tratamento intensivo que corrige as lesões da fibra capilar e promove uma hidratação tridimensional, que recupera a beleza dos fios desde a primeira aplicação."
+            },
+            {
+                id: 11,
+                name: "Máscara Capilar Siàge Cauterização dos Lisos 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 59.90,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E51749/EUD_51749_SIAGE_CAUTERIZACAO-LISOS_MASCARA-CAPILAR_FRONTAL_01.jpg",
+                description: "Seus fios lisos ou alisados estão precisando de um tratamento intensivo? A Máscara Capilar Siàge Cauterização dos Lisos repara os danos causados pela química ou pelas fontes de calor. Seus fios ficam 3x mais lisos, anti-frágeis e protegidos, logo na primeira aplicação."
+            },
+            {
+                id: 12,
+                name: "Máscara Capilar Siàge Reconstrói Os Fios 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 59.90,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53521/SIAGE_MASCARA_CAPILAR_RECONSTROI_OS_FIOS_E53521_PRINCIPAL_1.jpg",
+                description: "A Máscara Siàge Reconstrói os Fios age como um verdadeiro Creme de Reconstrução Capilar, entregando um tratamento intensivo para recuperar os cabelos de forma imediata."
+            },
+            {
+                id: 13,
+                name: "Máscara Capilar Siàge Acelera o Crescimento 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 59.90,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
+                description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm em 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
+            }
+        ];
+
+        newProductsToAdd.forEach(newP => {
+            const exists = storedProducts.some(p => p.id === newP.id || p.name === newP.name);
+            if (!exists) {
+                const idxToInsert = storedProducts.findIndex(p => p.id > newP.id);
+                if (idxToInsert > -1) {
+                    storedProducts.splice(idxToInsert, 0, newP);
+                } else {
+                    storedProducts.push(newP);
+                }
+            }
+        });
 
         products = storedProducts;
         localStorage.setItem("bella_beauty_products", JSON.stringify(products));
