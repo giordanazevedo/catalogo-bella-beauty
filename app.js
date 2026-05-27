@@ -147,7 +147,7 @@ const defaultProducts = [
         name: "Combo Siàge Resgate Imediato: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E2024050804/bc5f7cf3-7694-4385-98d7-af5b1c439cc7-e2024050804-siage-resgate-imediato.jpg",
         description: "Ideal para a sua rotina de hair care, o Combo Siàge Resgate Imediato traz shampoo e condicionador para a limpeza diária e máscara capilar para o tratamento semanal. Com a exclusiva Biotecnologia Affinité 4D e fórmulas enriquecidas com FIBER Restore®, Siàge Resgate Imediato traz a etapa de reconstrução do cronograma capilar, resgatando imediatamente fios com danos persistentes."
@@ -157,7 +157,7 @@ const defaultProducts = [
         name: "Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2021101405/E2021101405.jpg",
         description: "O Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador oferece tratamento completo de plástica capilar. Corrige lesões do fio, hidrata tridimensionalmente e elimina o ressecamento para fios saudáveis, brilhantes e macios."
@@ -167,7 +167,7 @@ const defaultProducts = [
         name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020312/E2022020312_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR_MASCARA.jpg",
         description: "O Combo Siàge Glow Expert entrega fios com brilho espelhado e alta luminosidade por muito mais tempo. Limpa, condiciona e hidrata profundamente com fórmula inovadora enriquecida com flor de hibisco."
@@ -187,7 +187,7 @@ const defaultProducts = [
         name: "Combo Siàge Cauterização dos Lisos: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
         description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
@@ -197,7 +197,7 @@ const defaultProducts = [
         name: "Eudora Kit Siàge Nutri Rosé: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://m.media-amazon.com/images/I/61Ta2MgQWSL._AC_SL1000_.jpg",
         description: "O Eudora Kit Siàge Nutri Rosé promove nutrição profunda e imediata. Repara pontas sem pesar e devolve a vitalidade aos cabelos fragilizados. Contém: 01 Shampoo 250ml, 01 Condicionador 200ml e 01 Máscara Capilar 250g."
@@ -207,7 +207,7 @@ const defaultProducts = [
         name: "Combo Siàge Liso Intenso: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023040610/E2023040610_COMBO_SIAGE_LISO_INTENSO_SHAMPOO_CONDICIONADOR_MASCARA_PRINCIPAL_1.jpg",
         description: "O Combo Siàge Liso Intenso proporciona cabelos lisos perfeitos por mais tempo. Hidrata intensamente, reduz o volume e combate o frizz, garantindo fios alinhados e disciplinados."
@@ -237,7 +237,7 @@ const defaultProducts = [
         name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
         brand: "Eudora",
         category: "kit",
-        price: 120.00,
+        price: 80.00,
         badge: "",
         image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
         description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
@@ -462,7 +462,7 @@ function init() {
                 name: "Combo Siàge Resgate Imediato: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E2024050804/bc5f7cf3-7694-4385-98d7-af5b1c439cc7-e2024050804-siage-resgate-imediato.jpg",
                 description: "Ideal para a sua rotina de hair care, o Combo Siàge Resgate Imediato traz shampoo e condicionador para a limpeza diária e máscara capilar para o tratamento semanal. Com a exclusiva Biotecnologia Affinité 4D e fórmulas enriquecidas com FIBER Restore®, Siàge Resgate Imediato traz a etapa de reconstrução do cronograma capilar, resgatando imediatamente fios com danos persistentes."
@@ -472,7 +472,7 @@ function init() {
                 name: "Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2021101405/E2021101405.jpg",
                 description: "O Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador oferece tratamento completo de plástica capilar. Corrige lesões do fio, hidrata tridimensionalmente e elimina o ressecamento para fios saudáveis, brilhantes e macios."
@@ -482,7 +482,7 @@ function init() {
                 name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020312/E2022020312_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR_MASCARA.jpg",
                 description: "O Combo Siàge Glow Expert entrega fios com brilho espelhado e alta luminosidade por muito mais tempo. Limpa, condiciona e hidrata profundamente com fórmula inovadora enriquecida com flor de hibisco."
@@ -502,7 +502,7 @@ function init() {
                 name: "Combo Siàge Cauterização dos Lisos: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
                 description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
@@ -512,7 +512,7 @@ function init() {
                 name: "Eudora Kit Siàge Nutri Rosé: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://m.media-amazon.com/images/I/61Ta2MgQWSL._AC_SL1000_.jpg",
                 description: "O Eudora Kit Siàge Nutri Rosé promove nutrição profunda e imediata. Repara pontas sem pesar e devolve a vitalidade aos cabelos fragilizados. Contém: 01 Shampoo 250ml, 01 Condicionador 200ml e 01 Máscara Capilar 250g."
@@ -522,7 +522,7 @@ function init() {
                 name: "Combo Siàge Liso Intenso: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023040610/E2023040610_COMBO_SIAGE_LISO_INTENSO_SHAMPOO_CONDICIONADOR_MASCARA_PRINCIPAL_1.jpg",
                 description: "O Combo Siàge Liso Intenso proporciona cabelos lisos perfeitos por mais tempo. Hidrata intensamente, reduz o volume e combate o frizz, garantindo fios alinhados e disciplinados."
@@ -552,7 +552,7 @@ function init() {
                 name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
                 brand: "Eudora",
                 category: "kit",
-                price: 120.00,
+                price: 80.00,
                 badge: "",
                 image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
                 description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
@@ -580,8 +580,28 @@ function init() {
             }
         });
 
+        // Garantir que produtos com preço antigo de R$ 120,00 sejam atualizados para R$ 80,00
+        storedProducts.forEach(p => {
+            if (p.price === 120.00) {
+                p.price = 80.00;
+            }
+        });
+
         products = storedProducts;
         localStorage.setItem("bella_beauty_products", JSON.stringify(products));
+    }
+
+    // Sincronizar preços no carrinho caso o preço no catálogo tenha mudado
+    let cartModified = false;
+    cart.forEach(item => {
+        const prod = products.find(p => p.id === item.id);
+        if (prod && item.price !== prod.price) {
+            item.price = prod.price;
+            cartModified = true;
+        }
+    });
+    if (cartModified) {
+        localStorage.setItem("bella_beauty_cart", JSON.stringify(cart));
     }
 
     renderProducts();
