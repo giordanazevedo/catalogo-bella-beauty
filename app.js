@@ -204,6 +204,8 @@ let activeCategory = "all";
 let activeBrand = "all";
 let searchQuery = "";
 let whatsappNumber = localStorage.getItem("bella_beauty_whatsapp") || "5586999707484"; // Substituir com o seu real
+let adminPassword = localStorage.getItem("bella_beauty_admin_password") || "bella123";
+let isAdminAuthenticated = sessionStorage.getItem("bella_beauty_admin_auth") === "true";
 
 // Seleção de Elementos DOM
 const productGrid = document.getElementById("product-grid");
@@ -250,6 +252,13 @@ const prodImgInput = document.getElementById("prod-img");
 const prodImgPreview = document.getElementById("prod-img-preview");
 const prodDescInput = document.getElementById("prod-desc");
 const cfgWhatsappInput = document.getElementById("cfg-whatsapp");
+const cfgPasswordInput = document.getElementById("cfg-password");
+
+// Elementos do Modal de Autenticação do Admin
+const adminLoginModalBackdrop = document.getElementById("admin-login-modal-backdrop");
+const adminLoginModalClose = document.getElementById("admin-login-modal-close");
+const adminLoginForm = document.getElementById("admin-login-form");
+const adminPasswordInput = document.getElementById("admin-password-input");
 
 // Toast Container
 const toastContainer = document.getElementById("toast-container");
@@ -534,6 +543,30 @@ function setupEventListeners() {
     adminModalClose.addEventListener("click", closeAdminModal);
     adminModalBackdrop.addEventListener("click", (e) => {
         if (e.target === adminModalBackdrop) closeAdminModal();
+    });
+
+    // Fechar modal de login do admin
+    adminLoginModalClose.addEventListener("click", closeAdminLoginModal);
+    adminLoginModalBackdrop.addEventListener("click", (e) => {
+        if (e.target === adminLoginModalBackdrop) closeAdminLoginModal();
+    });
+
+    // Submit do form de login do admin
+    adminLoginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const pwd = adminPasswordInput.value;
+        if (pwd === adminPassword) {
+            isAdminAuthenticated = true;
+            sessionStorage.setItem("bella_beauty_admin_auth", "true");
+            adminPasswordInput.value = "";
+            closeAdminLoginModal();
+            openAdminModal();
+            showToast("Autenticado com sucesso!");
+        } else {
+            showToast("Senha incorreta!");
+            adminPasswordInput.value = "";
+            adminPasswordInput.focus();
+        }
     });
 
     // Enviar pedido para o WhatsApp
@@ -905,6 +938,10 @@ function sendOrderWhatsApp() {
 // --- PAINEL DE CONTROLE / ADMIN (LOCALSTORAGE) ---
 
 function openAdminModal() {
+    if (!isAdminAuthenticated) {
+        openAdminLoginModal();
+        return;
+    }
     adminModalBackdrop.classList.add("open");
     document.body.style.overflow = "hidden";
     renderAdminProductsTable();
@@ -914,6 +951,18 @@ function closeAdminModal() {
     adminModalBackdrop.classList.remove("open");
     document.body.style.overflow = "";
     resetAdminForm();
+}
+
+function openAdminLoginModal() {
+    adminLoginModalBackdrop.classList.add("open");
+    document.body.style.overflow = "hidden";
+    adminPasswordInput.focus();
+}
+
+function closeAdminLoginModal() {
+    adminLoginModalBackdrop.classList.remove("open");
+    document.body.style.overflow = "";
+    adminPasswordInput.value = "";
 }
 
 function initAdminPanel() {
@@ -938,6 +987,16 @@ function initAdminPanel() {
         const val = e.target.value.replace(/\D/g, ""); // Apenas números
         whatsappNumber = val;
         localStorage.setItem("bella_beauty_whatsapp", val);
+    });
+
+    // Carregar e atualizar senha nas configurações
+    cfgPasswordInput.value = adminPassword;
+    cfgPasswordInput.addEventListener("input", (e) => {
+        const val = e.target.value.trim();
+        if (val) {
+            adminPassword = val;
+            localStorage.setItem("bella_beauty_admin_password", val);
+        }
     });
 
     // Form submit para salvar/criar produto
