@@ -131,6 +131,66 @@ const defaultProducts = [
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
         description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm in 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
+    },
+    {
+        id: 14,
+        name: "Máscara Capilar Siàge Dermo Hair Resistência Antiqueda 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 40.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E57491/30ba7d0d-6884-4e4b-bd63-13f106a4f23b-e57491-siage-mascara-250g-frontal.jpg",
+        description: "A Máscara Capilar Siàge Dermo Hair Resistência Antiqueda fortalece a fibra capilar e reduz a queda de cabelo desde a primeira aplicação, devolvendo a densidade e a resistência aos fios."
+    },
+    {
+        id: 15,
+        name: "Combo Siàge Resgate Imediato: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E2024050804/bc5f7cf3-7694-4385-98d7-af5b1c439cc7-e2024050804-siage-resgate-imediato.jpg",
+        description: "Ideal para a sua rotina de hair care, o Combo Siàge Resgate Imediato traz shampoo e condicionador para a limpeza diária e máscara capilar para o tratamento semanal. Com a exclusiva Biotecnologia Affinité 4D e fórmulas enriquecidas com FIBER Restore®, Siàge Resgate Imediato traz a etapa de reconstrução do cronograma capilar, resgatando imediatamente fios com danos persistentes."
+    },
+    {
+        id: 16,
+        name: "Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2021101405/E2021101405.jpg",
+        description: "O Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador oferece tratamento completo de plástica capilar. Corrige lesões do fio, hidrata tridimensionalmente e elimina o ressecamento para fios saudáveis, brilhantes e macios."
+    },
+    {
+        id: 17,
+        name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020312/E2022020312_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR_MASCARA.jpg",
+        description: "O Combo Siàge Glow Expert entrega fios com brilho espelhado e alta luminosidade por muito mais tempo. Limpa, condiciona e hidrata profundamente com fórmula inovadora enriquecida com flor de hibisco."
+    },
+    {
+        id: 18,
+        name: "Máscara Capilar Siàge Nutri Rosé 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 40.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53437/SIAGE_NUTRI_ROSE_MASCARA_CAPILAR_E53437_PRINCIPAL_1.jpg",
+        description: "A Máscara Capilar Siàge Nutri Rosé promove uma nutrição profunda e imediata. Repara as pontas sem pesar e devolve a vitalidade aos cabelos fragilizados, garantindo fios nutridos, macios e sem pontas duplas."
+    },
+    {
+        id: 19,
+        name: "Combo Siàge Cauterização dos Lisos: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
+        description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
     }
 ];
 
@@ -327,6 +387,66 @@ function init() {
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53506/SIAGE_ACELERA_O_CRESCIMENTO_MASCARA_E53506_RPCK_PRINCIPAL_1.jpg",
                 description: "Seu cabelo tem dificuldade para crescer forte e saudável? A Máscara Capilar Siàge Acelera O Crescimento faz com que eles ganhem volume e comprimento, além de atuar na prevenção da queda. Seus fios crescem até 3cm em 2 meses* com redução expressiva da quebra e aumento da vida útil dos fios."
+            },
+            {
+                id: 14,
+                name: "Máscara Capilar Siàge Dermo Hair Resistência Antiqueda 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 40.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E57491/30ba7d0d-6884-4e4b-bd63-13f106a4f23b-e57491-siage-mascara-250g-frontal.jpg",
+                description: "A Máscara Capilar Siàge Dermo Hair Resistência Antiqueda fortalece a fibra capilar e reduz a queda de cabelo desde a primeira aplicação, devolvendo a densidade and a resistência aos fios."
+            },
+            {
+                id: 15,
+                name: "Combo Siàge Resgate Imediato: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E2024050804/bc5f7cf3-7694-4385-98d7-af5b1c439cc7-e2024050804-siage-resgate-imediato.jpg",
+                description: "Ideal para a sua rotina de hair care, o Combo Siàge Resgate Imediato traz shampoo e condicionador para a limpeza diária e máscara capilar para o tratamento semanal. Com a exclusiva Biotecnologia Affinité 4D e fórmulas enriquecidas com FIBER Restore®, Siàge Resgate Imediato traz a etapa de reconstrução do cronograma capilar, resgatando imediatamente fios com danos persistentes."
+            },
+            {
+                id: 16,
+                name: "Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2021101405/E2021101405.jpg",
+                description: "O Combo Siàge Hair Plastia Shampoo + Máscara + Condicionador oferece tratamento completo de plástica capilar. Corrige lesões do fio, hidrata tridimensionalmente e elimina o ressecamento para fios saudáveis, brilhantes e macios."
+            },
+            {
+                id: 17,
+                name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020312/E2022020312_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR_MASCARA.jpg",
+                description: "O Combo Siàge Glow Expert entrega fios com brilho espelhado e alta luminosidade por muito mais tempo. Limpa, condiciona e hidrata profundamente com fórmula inovadora enriquecida com flor de hibisco."
+            },
+            {
+                id: 18,
+                name: "Máscara Capilar Siàge Nutri Rosé 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 40.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E53437/SIAGE_NUTRI_ROSE_MASCARA_CAPILAR_E53437_PRINCIPAL_1.jpg",
+                description: "A Máscara Capilar Siàge Nutri Rosé promove uma nutrição profunda e imediata. Repara as pontas sem pesar e devolve a vitalidade aos cabelos fragilizados, garantindo fios nutridos, macios e sem pontas duplas."
+            },
+            {
+                id: 19,
+                name: "Combo Siàge Cauterização dos Lisos: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
+                description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
             }
         ];
 
@@ -342,8 +462,8 @@ function init() {
             }
         });
 
-        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
-        const maskIds = [10, 11, 12, 13];
+        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13, 14, 18) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
+        const maskIds = [10, 11, 12, 13, 14, 18];
         maskIds.forEach(id => {
             const idx = storedProducts.findIndex(p => p.id === id);
             if (idx > -1) {
@@ -451,6 +571,12 @@ function showToast(message) {
 
 // --- CONTROLE DOS PRODUTOS (CATÁLOGO) ---
 
+// Retorna o limite de quantidade para um produto (10 para óleos, 7 para os demais)
+function getProductLimit(product) {
+    if (!product) return 7;
+    return product.category === "oleo" ? 10 : 7;
+}
+
 // Função auxiliar para remover acentos e diacríticos de uma string
 function removeAccents(str) {
     if (!str) return "";
@@ -496,6 +622,11 @@ function renderProducts() {
 
     productGrid.innerHTML = filteredProducts.map(product => {
         const hasBadge = product.badge && product.badge.trim() !== "";
+        const cartItem = cart.find(item => item.id === product.id);
+        const currentQty = cartItem ? cartItem.qty : 0;
+        const limit = getProductLimit(product);
+        const isLimitReached = currentQty >= limit;
+
         return `
             <div class="product-card" data-id="${product.id}">
                 ${hasBadge ? `<span class="product-badge">${product.badge}</span>` : ''}
@@ -512,14 +643,20 @@ function renderProducts() {
                     </div>
                     
                     <div class="product-actions">
-                        <button class="btn btn-primary" onclick="addToCart(${product.id})">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                            </svg>
-                            Adicionar
-                        </button>
+                        ${isLimitReached ? `
+                            <button class="btn btn-outline" disabled style="opacity: 0.6; cursor: not-allowed;">
+                                Limite Atingido (${limit})
+                            </button>
+                        ` : `
+                            <button class="btn btn-primary" onclick="addToCart(${product.id})">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                                Adicionar
+                            </button>
+                        `}
                     </div>
                 </div>
             </div>
@@ -532,6 +669,11 @@ function viewProductDetails(id) {
     const product = products.find(p => p.id === id);
     if (!product) return;
 
+    const cartItem = cart.find(item => item.id === product.id);
+    const currentQty = cartItem ? cartItem.qty : 0;
+    const limit = getProductLimit(product);
+    const isLimitReached = currentQty >= limit;
+
     detailModalContent.innerHTML = `
         <div class="product-detail-layout">
             <div class="product-detail-img-box">
@@ -542,6 +684,15 @@ function viewProductDetails(id) {
                 <h2 class="product-detail-name">${product.name}</h2>
                 <p class="product-detail-description">${product.description || 'Nenhuma descrição detalhada disponível para este produto.'}</p>
                 
+                <div style="margin-bottom: 1.2rem; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem; background: var(--bg-main); padding: 0.6rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>Limite: <strong>${limit} unidades</strong> ${currentQty > 0 ? `(no carrinho: ${currentQty})` : '(disponível)'}</span>
+                </div>
+
                 <div class="product-detail-price-box">
                     <div>
                         <span class="price-label" style="display: block; font-size: 0.9rem;">Preço de Venda:</span>
@@ -550,14 +701,20 @@ function viewProductDetails(id) {
                     ${product.badge ? `<span class="product-badge" style="position:static; margin-top:0;">${product.badge}</span>` : ''}
                 </div>
                 
-                <button class="btn btn-primary" style="width: 100%; padding: 1rem;" onclick="addToCart(${product.id}); closeDetailModal();">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                    Adicionar ao Carrinho
-                </button>
+                ${isLimitReached ? `
+                    <button class="btn btn-outline" style="width: 100%; padding: 1rem; opacity: 0.6; cursor: not-allowed;" disabled>
+                        Limite de estoque atingido (${limit} un.)
+                    </button>
+                ` : `
+                    <button class="btn btn-primary" style="width: 100%; padding: 1rem;" onclick="addToCart(${product.id}); closeDetailModal();">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                `}
             </div>
         </div>
     `;
@@ -587,8 +744,15 @@ function addToCart(id) {
     const product = products.find(p => p.id === id);
     if (!product) return;
 
-    // Verificar se já existe no carrinho
+    const limit = getProductLimit(product);
     const cartItem = cart.find(item => item.id === id);
+    const currentQty = cartItem ? cartItem.qty : 0;
+
+    if (currentQty >= limit) {
+        showToast(`Limite máximo de ${limit} unidades atingido para este produto!`);
+        return;
+    }
+
     if (cartItem) {
         cartItem.qty += 1;
     } else {
@@ -610,6 +774,15 @@ function addToCart(id) {
 function changeQty(id, delta) {
     const item = cart.find(item => item.id === id);
     if (!item) return;
+
+    if (delta > 0) {
+        const product = products.find(p => p.id === id);
+        const limit = product ? getProductLimit(product) : 7;
+        if (item.qty + delta > limit) {
+            showToast(`Limite máximo de ${limit} unidades atingido para este produto!`);
+            return;
+        }
+    }
 
     item.qty += delta;
 
@@ -676,7 +849,11 @@ function updateCartUI() {
     checkoutWhatsappBtn.style.opacity = "1";
     checkoutWhatsappBtn.style.cursor = "pointer";
 
-    cartItemsContainer.innerHTML = cart.map(item => `
+    cartItemsContainer.innerHTML = cart.map(item => {
+        const product = products.find(p => p.id === item.id);
+        const limit = product ? getProductLimit(product) : 7;
+        const isMax = item.qty >= limit;
+        return `
         <div class="cart-item">
             <button class="cart-item-remove" onclick="removeFromCart(${item.id})">&times;</button>
             <div class="cart-item-img-container">
@@ -689,12 +866,16 @@ function updateCartUI() {
                     <div class="qty-controls">
                         <button class="qty-btn" onclick="changeQty(${item.id}, -1)">-</button>
                         <span class="qty-number">${item.qty}</span>
-                        <button class="qty-btn" onclick="changeQty(${item.id}, 1)">+</button>
+                        <button class="qty-btn" onclick="changeQty(${item.id}, 1)" ${isMax ? 'disabled style="opacity: 0.3; cursor: not-allowed;"' : ''}>+</button>
                     </div>
                 </div>
             </div>
         </div>
-    `).join("");
+        `;
+    }).join("");
+
+    // Recalcular estados dos botões no catálogo
+    renderProducts();
 }
 
 // Enviar pedido via WhatsApp
