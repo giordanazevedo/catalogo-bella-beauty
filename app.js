@@ -610,6 +610,36 @@ function getProductLimit(product) {
     return product.category === "oleo" ? 10 : 7;
 }
 
+// Retorna a prioridade de ordenação do produto
+function getProductSortPriority(product) {
+    if (!product) return 99;
+    
+    const nameLower = product.name.toLowerCase();
+    const hasMascara = nameLower.includes("mascara") || nameLower.includes("máscara");
+    
+    // Grupo 1: Apenas Shampoo e Condicionador (individuais ou combos de 2 itens)
+    if (product.category === "shampoo" || product.category === "condicionador" || (product.category === "kit" && !hasMascara)) {
+        return 1;
+    }
+    
+    // Grupo 2: Óleos
+    if (product.category === "oleo") {
+        return 2;
+    }
+    
+    // Grupo 3: Máscaras (individuais)
+    if (product.category === "mascara") {
+        return 3;
+    }
+    
+    // Grupo 4: Combos Completos (kits que contêm máscara)
+    if (product.category === "kit" && hasMascara) {
+        return 4;
+    }
+    
+    return 5; // Qualquer outro produto
+}
+
 // Função auxiliar para remover acentos e diacríticos de uma string
 function removeAccents(str) {
     if (!str) return "";
@@ -633,6 +663,16 @@ function renderProducts() {
             productDesc.includes(cleanSearchQuery);
 
         return matchesCategory && matchesBrand && matchesSearch;
+    });
+
+    // Ordenar produtos por prioridade (Shampoo/Cond -> Óleos -> Máscaras -> Combos Completos)
+    filteredProducts.sort((a, b) => {
+        const priorityA = getProductSortPriority(a);
+        const priorityB = getProductSortPriority(b);
+        if (priorityA !== priorityB) {
+            return priorityA - priorityB;
+        }
+        return products.indexOf(a) - products.indexOf(b);
     });
 
     // Atualizar contador de resultados
