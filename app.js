@@ -74,13 +74,13 @@ const defaultProducts = [
     },
     {
         id: 8,
-        name: "Combo Eudora Siàge Revela os Cachos (Shampoo 250ml + Condicionador 200ml)",
+        name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml",
         brand: "Eudora",
         category: "kit",
         price: 45.00,
         badge: "",
-        image: "https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/6/eudora-siage-revela-os-cachos-shampoo-250ml-35805-001099182103445831.jpg",
-        description: "O Combo Siàge Revela os Cachos limpa suavemente os fios e condiciona profundamente, proporcionando cachos definidos, macios, com balanço natural e 3x menos frizz. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020313/E2023020313_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR.jpg",
+        description: "O Combo Siàge Glow Expert limpa suavemente os fios e condiciona profundamente, proporcionando brilho espelhado, alta luminosidade e maciez intensa. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
     },
     {
         id: 9,
@@ -340,18 +340,18 @@ function init() {
             }
         }
 
-        // Migração: atualizar ID 8 para Combo Eudora Siàge Revela os Cachos se for o antigo Natura Lumina
+        // Migração: atualizar ID 8 para Combo Siàge Glow Expert se for o antigo Revela os Cachos ou Natura Lumina
         const idx8 = storedProducts.findIndex(p => p.id === 8);
-        if (idx8 > -1 && (storedProducts[idx8].name.includes("Natura Lumina") || storedProducts[idx8].name.includes("Lumina"))) {
+        if (idx8 > -1 && (storedProducts[idx8].name.includes("Cachos") || storedProducts[idx8].name.includes("Natura Lumina") || storedProducts[idx8].name.includes("Lumina"))) {
             storedProducts[idx8] = {
                 id: 8,
-                name: "Combo Eudora Siàge Revela os Cachos (Shampoo 250ml + Condicionador 200ml)",
+                name: "Combo Siàge Glow Expert: Shampoo 250ml + Condicionador 200ml",
                 brand: "Eudora",
                 category: "kit",
                 price: 45.00,
                 badge: "",
-                image: "https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/6/eudora-siage-revela-os-cachos-shampoo-250ml-35805-001099182103445831.jpg",
-                description: "O Combo Siàge Revela os Cachos limpa suavemente os fios e condiciona profundamente, proporcionando cachos definidos, macios, com balanço natural e 3x menos frizz. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023020313/E2023020313_SIAGE_GLOW_EXPERT_SHAMPOO_CONDICIONADOR.jpg",
+                description: "O Combo Siàge Glow Expert limpa suavemente os fios e condiciona profundamente, proporcionando brilho espelhado, alta luminosidade e maciez intensa. Contém: 01 Shampoo 250ml e 01 Condicionador 200ml."
             };
         }
 
