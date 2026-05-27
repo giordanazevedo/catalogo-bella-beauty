@@ -546,28 +546,36 @@ function setupEventListeners() {
     });
 
     // Fechar modal de login do admin
-    adminLoginModalClose.addEventListener("click", closeAdminLoginModal);
-    adminLoginModalBackdrop.addEventListener("click", (e) => {
-        if (e.target === adminLoginModalBackdrop) closeAdminLoginModal();
-    });
+    if (adminLoginModalClose) {
+        adminLoginModalClose.addEventListener("click", closeAdminLoginModal);
+    }
+    if (adminLoginModalBackdrop) {
+        adminLoginModalBackdrop.addEventListener("click", (e) => {
+            if (e.target === adminLoginModalBackdrop) closeAdminLoginModal();
+        });
+    }
 
     // Submit do form de login do admin
-    adminLoginForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const pwd = adminPasswordInput.value;
-        if (pwd === adminPassword) {
-            isAdminAuthenticated = true;
-            sessionStorage.setItem("bella_beauty_admin_auth", "true");
-            adminPasswordInput.value = "";
-            closeAdminLoginModal();
-            openAdminModal();
-            showToast("Autenticado com sucesso!");
-        } else {
-            showToast("Senha incorreta!");
-            adminPasswordInput.value = "";
-            adminPasswordInput.focus();
-        }
-    });
+    if (adminLoginForm) {
+        adminLoginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const pwd = adminPasswordInput ? adminPasswordInput.value : "";
+            if (pwd === adminPassword) {
+                isAdminAuthenticated = true;
+                sessionStorage.setItem("bella_beauty_admin_auth", "true");
+                if (adminPasswordInput) adminPasswordInput.value = "";
+                closeAdminLoginModal();
+                openAdminModal();
+                showToast("Autenticado com sucesso!");
+            } else {
+                showToast("Senha incorreta!");
+                if (adminPasswordInput) {
+                    adminPasswordInput.value = "";
+                    adminPasswordInput.focus();
+                }
+            }
+        });
+    }
 
     // Enviar pedido para o WhatsApp
     checkoutWhatsappBtn.addEventListener("click", sendOrderWhatsApp);
@@ -613,30 +621,30 @@ function getProductLimit(product) {
 // Retorna a prioridade de ordenação do produto
 function getProductSortPriority(product) {
     if (!product) return 99;
-    
+
     const nameLower = product.name.toLowerCase();
     const hasMascara = nameLower.includes("mascara") || nameLower.includes("máscara");
-    
+
     // Grupo 1: Apenas Shampoo e Condicionador (individuais ou combos de 2 itens)
     if (product.category === "shampoo" || product.category === "condicionador" || (product.category === "kit" && !hasMascara)) {
         return 1;
     }
-    
+
     // Grupo 2: Óleos
     if (product.category === "oleo") {
         return 2;
     }
-    
+
     // Grupo 3: Máscaras (individuais)
     if (product.category === "mascara") {
         return 3;
     }
-    
+
     // Grupo 4: Combos Completos (kits que contêm máscara)
     if (product.category === "kit" && hasMascara) {
         return 4;
     }
-    
+
     return 5; // Qualquer outro produto
 }
 
@@ -994,15 +1002,19 @@ function closeAdminModal() {
 }
 
 function openAdminLoginModal() {
-    adminLoginModalBackdrop.classList.add("open");
-    document.body.style.overflow = "hidden";
-    adminPasswordInput.focus();
+    if (adminLoginModalBackdrop) {
+        adminLoginModalBackdrop.classList.add("open");
+        document.body.style.overflow = "hidden";
+        if (adminPasswordInput) adminPasswordInput.focus();
+    }
 }
 
 function closeAdminLoginModal() {
-    adminLoginModalBackdrop.classList.remove("open");
-    document.body.style.overflow = "";
-    adminPasswordInput.value = "";
+    if (adminLoginModalBackdrop) {
+        adminLoginModalBackdrop.classList.remove("open");
+        document.body.style.overflow = "";
+        if (adminPasswordInput) adminPasswordInput.value = "";
+    }
 }
 
 function initAdminPanel() {
@@ -1030,14 +1042,16 @@ function initAdminPanel() {
     });
 
     // Carregar e atualizar senha nas configurações
-    cfgPasswordInput.value = adminPassword;
-    cfgPasswordInput.addEventListener("input", (e) => {
-        const val = e.target.value.trim();
-        if (val) {
-            adminPassword = val;
-            localStorage.setItem("bella_beauty_admin_password", val);
-        }
-    });
+    if (cfgPasswordInput) {
+        cfgPasswordInput.value = adminPassword;
+        cfgPasswordInput.addEventListener("input", (e) => {
+            const val = e.target.value.trim();
+            if (val) {
+                adminPassword = val;
+                localStorage.setItem("bella_beauty_admin_password", val);
+            }
+        });
+    }
 
     // Form submit para salvar/criar produto
     adminProductForm.addEventListener("submit", (e) => {
