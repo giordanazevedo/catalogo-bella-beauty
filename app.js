@@ -36,7 +36,7 @@ const defaultProducts = [
         id: 4,
         name: "Combo Siàge Volume Imediato: Shampoo 250ml + Condicionador 200ml",
         brand: "Eudora",
-        category: "mascara",
+        category: "kit",
         price: 45.00,
         badge: "Recomendado",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E2026020401/02f5493c-20a6-446c-8428-f4e8b33e0a56-e2026020401.jpg",
@@ -707,6 +707,10 @@ function renderProducts() {
         const currentQty = cartItem ? cartItem.qty : 0;
         const limit = getProductLimit(product);
         const isLimitReached = currentQty >= limit;
+        const remaining = limit - currentQty;
+        const availabilityHtml = remaining > 0 
+            ? `<span>Disponível: <strong>${remaining} un.</strong></span>`
+            : `<span style="color: var(--accent); font-weight: 600;">Limite atingido</span>`;
 
         return `
             <div class="product-card" data-id="${product.id}">
@@ -721,6 +725,15 @@ function renderProducts() {
                     <div class="product-price-container">
                         <span class="price-label">Preço:</span>
                         <span class="product-price">R$ ${product.price.toFixed(2).replace('.', ',')}</span>
+                    </div>
+
+                    <div class="product-availability" style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.8rem; display: flex; align-items: center; gap: 4px;">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; color: ${remaining > 0 ? 'currentColor' : 'var(--accent)'};">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        ${availabilityHtml}
                     </div>
                     
                     <div class="product-actions">
