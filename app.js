@@ -191,6 +191,56 @@ const defaultProducts = [
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
         description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
+    },
+    {
+        id: 20,
+        name: "Eudora Kit Siàge Nutri Rosé: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://m.media-amazon.com/images/I/61Ta2MgQWSL._AC_SL1000_.jpg",
+        description: "O Eudora Kit Siàge Nutri Rosé promove nutrição profunda e imediata. Repara pontas sem pesar e devolve a vitalidade aos cabelos fragilizados. Contém: 01 Shampoo 250ml, 01 Condicionador 200ml e 01 Máscara Capilar 250g."
+    },
+    {
+        id: 21,
+        name: "Combo Siàge Liso Intenso: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023040610/E2023040610_COMBO_SIAGE_LISO_INTENSO_SHAMPOO_CONDICIONADOR_MASCARA_PRINCIPAL_1.jpg",
+        description: "O Combo Siàge Liso Intenso proporciona cabelos lisos perfeitos por mais tempo. Hidrata intensamente, reduz o volume e combate o frizz, garantindo fios alinhados e disciplinados."
+    },
+    {
+        id: 22,
+        name: "Máscara Capilar Siàge Volume Imediato 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 40.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E87559/35a890c0-230a-4c5e-baba-e26061a379f1-e87559-mascara-volume-imediato-1.jpg",
+        description: "A Máscara Capilar Siàge Volume Imediato reconstrói e encorpa a fibra capilar, dando volume instantâneo aos cabelos finos e minguados sem pesar."
+    },
+    {
+        id: 23,
+        name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml",
+        brand: "Eudora",
+        category: "kit",
+        price: 45.00,
+        badge: "",
+        image: "https://m.media-amazon.com/images/I/51PVU9It2jL._AC_SL1000_.jpg",
+        description: "O Kit Siàge Cica-Therapy faz uma cicatrização capilar imediata, tratando os fios danificados e resgatando a saúde do cabelo com fórmulas enriquecidas com esqualano e cica."
+    },
+    {
+        id: 24,
+        name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+        brand: "Eudora",
+        category: "kit",
+        price: 120.00,
+        badge: "",
+        image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
+        description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
     }
 ];
 
@@ -456,6 +506,56 @@ function init() {
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023050803/EUD_2023050803_SIAGE_CAUTERIZACAO_LISOS_SHAMPOO_CONDICIONADOR_MASCARA_FRONTAL_01.jpg",
                 description: "O Combo Siàge Cauterização dos Lisos: Shampoo + Condicionador + Máscara garante os melhores resultados para fios alinhados, disciplinados e macios no pós e pré química, sem deixar a hidratação de lado."
+            },
+            {
+                id: 20,
+                name: "Eudora Kit Siàge Nutri Rosé: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://m.media-amazon.com/images/I/61Ta2MgQWSL._AC_SL1000_.jpg",
+                description: "O Eudora Kit Siàge Nutri Rosé promove nutrição profunda e imediata. Repara pontas sem pesar e devolve a vitalidade aos cabelos fragilizados. Contém: 01 Shampoo 250ml, 01 Condicionador 200ml e 01 Máscara Capilar 250g."
+            },
+            {
+                id: 21,
+                name: "Combo Siàge Liso Intenso: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023040610/E2023040610_COMBO_SIAGE_LISO_INTENSO_SHAMPOO_CONDICIONADOR_MASCARA_PRINCIPAL_1.jpg",
+                description: "O Combo Siàge Liso Intenso proporciona cabelos lisos perfeitos por mais tempo. Hidrata intensamente, reduz o volume e combate o frizz, garantindo fios alinhados e disciplinados."
+            },
+            {
+                id: 22,
+                name: "Máscara Capilar Siàge Volume Imediato 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 40.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E87559/35a890c0-230a-4c5e-baba-e26061a379f1-e87559-mascara-volume-imediato-1.jpg",
+                description: "A Máscara Capilar Siàge Volume Imediato reconstrói e encorpa a fibra capilar, dando volume instantâneo aos cabelos finos e minguados sem pesar."
+            },
+            {
+                id: 23,
+                name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml",
+                brand: "Eudora",
+                category: "kit",
+                price: 45.00,
+                badge: "",
+                image: "https://m.media-amazon.com/images/I/51PVU9It2jL._AC_SL1000_.jpg",
+                description: "O Kit Siàge Cica-Therapy faz uma cicatrização capilar imediata, tratando os fios danificados e resgatando a saúde do cabelo com fórmulas enriquecidas com esqualano e cica."
+            },
+            {
+                id: 24,
+                name: "Eudora Kit Siàge Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
+                brand: "Eudora",
+                category: "kit",
+                price: 120.00,
+                badge: "",
+                image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
+                description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
             }
         ];
 
@@ -471,8 +571,8 @@ function init() {
             }
         });
 
-        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13, 14, 18) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
-        const maskIds = [10, 11, 12, 13, 14, 18];
+        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13, 14, 18, 22) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
+        const maskIds = [10, 11, 12, 13, 14, 18, 22];
         maskIds.forEach(id => {
             const idx = storedProducts.findIndex(p => p.id === id);
             if (idx > -1) {
