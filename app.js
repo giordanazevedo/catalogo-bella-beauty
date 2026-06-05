@@ -202,16 +202,7 @@ const defaultProducts = [
         image: "https://m.media-amazon.com/images/I/61Ta2MgQWSL._AC_SL1000_.jpg",
         description: "O Eudora Kit Siàge Nutri Rosé promove nutrição profunda e imediata. Repara pontas sem pesar e devolve a vitalidade aos cabelos fragilizados. Contém: 01 Shampoo 250ml, 01 Condicionador 200ml e 01 Máscara Capilar 250g."
     },
-    {
-        id: 21,
-        name: "Combo Siàge Liso Intenso: Shampoo 250ml + Máscara 250g + Condicionador 200ml",
-        brand: "Eudora",
-        category: "kit",
-        price: 80.00,
-        badge: "",
-        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E2023040610/E2023040610_COMBO_SIAGE_LISO_INTENSO_SHAMPOO_CONDICIONADOR_MASCARA_PRINCIPAL_1.jpg",
-        description: "O Combo Siàge Liso Intenso proporciona cabelos lisos perfeitos por mais tempo. Hidrata intensamente, reduz o volume e combate o frizz, garantindo fios alinhados e disciplinados."
-    },
+
     {
         id: 22,
         name: "Máscara Capilar Siàge Volume Imediato 250g",
