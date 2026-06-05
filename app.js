@@ -232,6 +232,16 @@ const defaultProducts = [
         badge: "",
         image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
         description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
+    },
+    {
+        id: 25,
+        name: "Máscara Capilar Siàge Glow Expert 250g",
+        brand: "Eudora",
+        category: "mascara",
+        price: 40.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E47177/8212d8a5-c607-458d-95ae-a67f8b5e0ccd-e47177-siage-mascara-frontal.jpg",
+        description: "A Máscara Capilar Siàge Glow Expert proporciona brilho espelhado e alta luminosidade por muito mais tempo. Trata cabelos opacos e indisciplinados, oferecendo hidratação e nutrição profunda sem pesar."
     }
 ];
 
@@ -538,6 +548,16 @@ function init() {
                 badge: "",
                 image: "https://m.media-amazon.com/images/I/515h+z9BXTL._AC_SY450_.jpg",
                 description: "O Kit Siàge Cica-Therapy Completo proporciona o cronograma ideal de cicatrização capilar. Sela cutículas, reduz quebra e reconstrói fios severamente danificados por processos químicos. Contém: 01 Shampoo, 01 Condicionador e 01 Máscara."
+            },
+            {
+                id: 25,
+                name: "Máscara Capilar Siàge Glow Expert 250g",
+                brand: "Eudora",
+                category: "mascara",
+                price: 40.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E47177/8212d8a5-c607-458d-95ae-a67f8b5e0ccd-e47177-siage-mascara-frontal.jpg",
+                description: "A Máscara Capilar Siàge Glow Expert proporciona brilho espelhado e alta luminosidade por muito mais tempo. Trata cabelos opacos e indisciplinados, oferecendo hidratação e nutrição profunda sem pesar."
             }
         ];
 
@@ -553,8 +573,8 @@ function init() {
             }
         });
 
-        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13, 14, 18, 22) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
-        const maskIds = [10, 11, 12, 13, 14, 18, 22];
+        // Garantir que o preço das máscaras (IDs 10, 11, 12, 13, 14, 18, 22, 25) seja atualizado para 40.00 caso já tenham sido migradas anteriormente
+        const maskIds = [10, 11, 12, 13, 14, 18, 22, 25];
         maskIds.forEach(id => {
             const idx = storedProducts.findIndex(p => p.id === id);
             if (idx > -1) {
