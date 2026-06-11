@@ -302,6 +302,16 @@ const defaultProducts = [
         badge: "",
         image: "https://m.media-amazon.com/images/I/61MuD54BkUL._AC_SL1200_.jpg",
         description: "A Máscara Intensiva Pantene Pro-V Reconstrução Molecular penetra profundamente na fibra capilar para reestruturar e fortalecer os cabelos danificados. Sua fórmula de alta tecnologia repara as ligações moleculares perdidas, devolvendo a vitalidade, elasticidade, maciez e brilho intenso aos fios."
+    },
+    {
+        id: 32,
+        name: "Kit Pantene PRO-V Miracles Colágeno Shampoo 300ml e Condicionador 150ml",
+        brand: "Pantene",
+        category: "kit",
+        price: 30.00,
+        badge: "",
+        image: "https://americanas.vtexassets.com/arquivos/ids/35852035-1280-auto/7500435200301_1.webp?v=638912284370570000&quality=9",
+        description: "O Kit Pantene Pro-V Miracles Colágeno Hidrata & Resgata é ideal para cabelos danificados e tratados quimicamente. Formulado com colágeno, pró-vitamina B5 e óleo de macadâmia, limpa profundamente enquanto nutre e ajuda a regenerar a estrutura capilar, deixando os fios macios, fortes e brilhantes. Contém: 01 Shampoo 300ml e 01 Condicionador 150ml."
     }
 ];
 
@@ -678,6 +688,16 @@ function init() {
                 badge: "",
                 image: "https://m.media-amazon.com/images/I/61MuD54BkUL._AC_SL1200_.jpg",
                 description: "A Máscara Intensiva Pantene Pro-V Reconstrução Molecular penetra profundamente na fibra capilar para reestruturar e fortalecer os cabelos danificados. Sua fórmula de alta tecnologia repara as ligações moleculares perdidas, devolvendo a vitalidade, elasticidade, maciez e brilho intenso aos fios."
+            },
+            {
+                id: 32,
+                name: "Kit Pantene PRO-V Miracles Colágeno Shampoo 300ml e Condicionador 150ml",
+                brand: "Pantene",
+                category: "kit",
+                price: 30.00,
+                badge: "",
+                image: "https://americanas.vtexassets.com/arquivos/ids/35852035-1280-auto/7500435200301_1.webp?v=638912284370570000&quality=9",
+                description: "O Kit Pantene Pro-V Miracles Colágeno Hidrata & Resgata é ideal para cabelos danificados e tratados quimicamente. Formulado com colágeno, pró-vitamina B5 e óleo de macadâmia, limpa profundamente enquanto nutre e ajuda a regenerar a estrutura capilar, deixando os fios macios, fortes e brilhantes. Contém: 01 Shampoo 300ml e 01 Condicionador 150ml."
             }
         ];
 
