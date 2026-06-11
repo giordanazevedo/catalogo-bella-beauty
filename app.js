@@ -312,6 +312,16 @@ const defaultProducts = [
         badge: "",
         image: "https://americanas.vtexassets.com/arquivos/ids/35852035-1280-auto/7500435200301_1.webp?v=638912284370570000&quality=9",
         description: "O Kit Pantene Pro-V Miracles Colágeno Hidrata & Resgata é ideal para cabelos danificados e tratados quimicamente. Formulado com colágeno, pró-vitamina B5 e óleo de macadâmia, limpa profundamente enquanto nutre e ajuda a regenerar a estrutura capilar, deixando os fios macios, fortes e brilhantes. Contém: 01 Shampoo 300ml e 01 Condicionador 150ml."
+    },
+    {
+        id: 33,
+        name: "Leave In Ox Vita Glow Cachos Definidos 300ml",
+        brand: "OX",
+        category: "oleo",
+        price: 30.00,
+        badge: "",
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_923602-MLB110739221854_052026-F.webp",
+        description: "O Leave In OX Vita Glow Cachos Definidos oferece nutrição, selagem e definição prolongada para cabelos cacheados. Formulado com um blend de óleos nutritivos e vitaminas, protege contra o frizz, mantém os cachos definidos com movimento natural e proporciona brilho radiante."
     }
 ];
 
@@ -698,6 +708,16 @@ function init() {
                 badge: "",
                 image: "https://americanas.vtexassets.com/arquivos/ids/35852035-1280-auto/7500435200301_1.webp?v=638912284370570000&quality=9",
                 description: "O Kit Pantene Pro-V Miracles Colágeno Hidrata & Resgata é ideal para cabelos danificados e tratados quimicamente. Formulado com colágeno, pró-vitamina B5 e óleo de macadâmia, limpa profundamente enquanto nutre e ajuda a regenerar a estrutura capilar, deixando os fios macios, fortes e brilhantes. Contém: 01 Shampoo 300ml e 01 Condicionador 150ml."
+            },
+            {
+                id: 33,
+                name: "Leave In Ox Vita Glow Cachos Definidos 300ml",
+                brand: "OX",
+                category: "oleo",
+                price: 30.00,
+                badge: "",
+                image: "https://http2.mlstatic.com/D_NQ_NP_2X_923602-MLB110739221854_052026-F.webp",
+                description: "O Leave In OX Vita Glow Cachos Definidos oferece nutrição, selagem e definição prolongada para cabelos cacheados. Formulado com um blend de óleos nutritivos e vitaminas, protege contra o frizz, mantém os cachos definidos com movimento natural e proporciona brilho radiante."
             }
         ];
 
