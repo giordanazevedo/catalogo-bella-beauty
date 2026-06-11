@@ -242,6 +242,36 @@ const defaultProducts = [
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E47177/8212d8a5-c607-458d-95ae-a67f8b5e0ccd-e47177-siage-mascara-frontal.jpg",
         description: "A Máscara Capilar Siàge Glow Expert proporciona brilho espelhado e alta luminosidade por muito mais tempo. Trata cabelos opacos e indisciplinados, oferecendo hidratação e nutrição profunda sem pesar."
+    },
+    {
+        id: 26,
+        name: "L'Oréal Paris Elseve Óleo Extraordinário 100ml",
+        brand: "L'Oréal Paris",
+        category: "oleo",
+        price: 0.00,
+        badge: "Destaque",
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_891488-MLA111876262926_062026-F.webp",
+        description: "Leave In Anti Frizz, Protetor Térmico e Tratamento Reconstrutor para todos os tipos de cabelo. O Óleo Extraordinário de L'Oréal Paris (Loreal) é o gesto de beleza que deixa seus cabelos sublimes, proporcionando nutrição, brilho e proteção térmica contra calor de até 230°C."
+    },
+    {
+        id: 27,
+        name: "Kit Elseve Liso dos Sonhos: Shampoo e Condicionador 400ml",
+        brand: "L'Oréal Paris",
+        category: "kit",
+        price: 35.00,
+        badge: "",
+        image: "https://drogal.vtexassets.com/arquivos/ids/253090-1200-900?v=638804235499130000&width=1200&height=900&aspect=true",
+        description: "O Kit Elseve Liso dos Sonhos é ideal para cabelos longos e com frizz. Sua fórmula enriquecida com queratina vegetal e manteiga de cacau limpa suavemente e nutre profundamente, combatendo o frizz por até 48 horas e mantendo os fios perfeitamente lisos e alinhados. Contém: 01 Shampoo 400ml e 01 Condicionador 400ml."
+    },
+    {
+        id: 28,
+        name: "Shampoo 375ml e Condicionador 170ml Elseve L'Oréal Paris Glycolic Gloss",
+        brand: "L'Oréal Paris",
+        category: "kit",
+        price: 30.00,
+        badge: "",
+        image: "https://americanas.vtexassets.com/arquivos/ids/452276-1280-auto/7490175809_1SZ.webp?v=638750824953000000&quality=9",
+        description: "O Kit Elseve Glycolic Gloss de L'Oréal Paris (Loreal) proporciona cabelos visivelmente mais saudáveis, macios e com um brilho gloss extraordinário que resiste a até 6 lavagens. Sua fórmula inovadora enriquecida com Ácido Glicólico combate a porosidade e sela as cutículas capilares. Contém: 01 Shampoo 375ml e 01 Condicionador 170ml."
     }
 ];
 
@@ -558,6 +588,36 @@ function init() {
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/E47177/8212d8a5-c607-458d-95ae-a67f8b5e0ccd-e47177-siage-mascara-frontal.jpg",
                 description: "A Máscara Capilar Siàge Glow Expert proporciona brilho espelhado e alta luminosidade por muito mais tempo. Trata cabelos opacos e indisciplinados, oferecendo hidratação e nutrição profunda sem pesar."
+            },
+            {
+                id: 26,
+                name: "L'Oréal Paris Elseve Óleo Extraordinário 100ml",
+                brand: "L'Oréal Paris",
+                category: "oleo",
+                price: 20.00,
+                badge: "Destaque",
+                image: "https://http2.mlstatic.com/D_NQ_NP_2X_891488-MLA111876262926_062026-F.webp",
+                description: "Leave In Anti Frizz, Protetor Térmico e Tratamento Reconstrutor para todos os tipos de cabelo. O Óleo Extraordinário de L'Oréal Paris (Loreal) é o gesto de beleza que deixa seus cabelos sublimes, proporcionando nutrição, brilho e proteção térmica contra calor de até 230°C."
+            },
+            {
+                id: 27,
+                name: "Kit Elseve Liso dos Sonhos: Shampoo e Condicionador 400ml",
+                brand: "L'Oréal Paris",
+                category: "kit",
+                price: 35.00,
+                badge: "",
+                image: "https://drogal.vtexassets.com/arquivos/ids/253090-1200-900?v=638804235499130000&width=1200&height=900&aspect=true",
+                description: "O Kit Elseve Liso dos Sonhos é ideal para cabelos longos e com frizz. Sua fórmula enriquecida com queratina vegetal e manteiga de cacau limpa suavemente e nutre profundamente, combatendo o frizz por até 48 horas e mantendo os fios perfeitamente lisos e alinhados. Contém: 01 Shampoo 400ml e 01 Condicionador 400ml."
+            },
+            {
+                id: 28,
+                name: "Shampoo 375ml e Condicionador 170ml Elseve L'Oréal Paris Glycolic Gloss",
+                brand: "L'Oréal Paris",
+                category: "kit",
+                price: 30.00,
+                badge: "",
+                image: "https://americanas.vtexassets.com/arquivos/ids/452276-1280-auto/7490175809_1SZ.webp?v=638750824953000000&quality=9",
+                description: "O Kit Elseve Glycolic Gloss de L'Oréal Paris (Loreal) proporciona cabelos visivelmente mais saudáveis, macios e com um brilho gloss extraordinário que resiste a até 6 lavagens. Sua fórmula inovadora enriquecida com Ácido Glicólico combate a porosidade e sela as cutículas capilares. Contém: 01 Shampoo 375ml e 01 Condicionador 170ml."
             }
         ];
 
