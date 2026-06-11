@@ -292,6 +292,16 @@ const defaultProducts = [
         badge: "",
         image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/KT005427/cbee1eb1-70e9-43b7-a519-2360ae047c46-kt005427-20078387-20078422.png",
         description: "Kit com shampoo e condicionador para cabelos afinados e sem volume. Elseve L'Oréal Paris Collagen® Lifter proporciona volume por 72h e maciez extrema. Preenche a fibra capilar, encorpa os fios e devolve o movimento natural sem pesar."
+    },
+    {
+        id: 31,
+        name: "Pantene Pro-V Reconstrução Molecular Máscara Intensiva 270 ml",
+        brand: "Pantene",
+        category: "mascara",
+        price: 30.00,
+        badge: "",
+        image: "https://m.media-amazon.com/images/I/61MuD54BkUL._AC_SL1200_.jpg",
+        description: "A Máscara Intensiva Pantene Pro-V Reconstrução Molecular penetra profundamente na fibra capilar para reestruturar e fortalecer os cabelos danificados. Sua fórmula de alta tecnologia repara as ligações moleculares perdidas, devolvendo a vitalidade, elasticidade, maciez e brilho intenso aos fios."
     }
 ];
 
@@ -658,6 +668,16 @@ function init() {
                 badge: "",
                 image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/KT005427/cbee1eb1-70e9-43b7-a519-2360ae047c46-kt005427-20078387-20078422.png",
                 description: "Kit com shampoo e condicionador para cabelos afinados e sem volume. Elseve L'Oréal Paris Collagen® Lifter proporciona volume por 72h e maciez extrema. Preenche a fibra capilar, encorpa os fios e devolve o movimento natural sem pesar."
+            },
+            {
+                id: 31,
+                name: "Pantene Pro-V Reconstrução Molecular Máscara Intensiva 270 ml",
+                brand: "Pantene",
+                category: "mascara",
+                price: 30.00,
+                badge: "",
+                image: "https://m.media-amazon.com/images/I/61MuD54BkUL._AC_SL1200_.jpg",
+                description: "A Máscara Intensiva Pantene Pro-V Reconstrução Molecular penetra profundamente na fibra capilar para reestruturar e fortalecer os cabelos danificados. Sua fórmula de alta tecnologia repara as ligações moleculares perdidas, devolvendo a vitalidade, elasticidade, maciez e brilho intenso aos fios."
             }
         ];
 
