@@ -272,6 +272,26 @@ const defaultProducts = [
         badge: "",
         image: "https://americanas.vtexassets.com/arquivos/ids/452276-1280-auto/7490175809_1SZ.webp?v=638750824953000000&quality=9",
         description: "O Kit Elseve Glycolic Gloss de L'Oréal Paris (Loreal) proporciona cabelos visivelmente mais saudáveis, macios e com um brilho gloss extraordinário que resiste a até 6 lavagens. Sua fórmula inovadora enriquecida com Ácido Glicólico combate a porosidade e sela as cutículas capilares. Contém: 01 Shampoo 375ml e 01 Condicionador 170ml."
+    },
+    {
+        id: 29,
+        name: "Kit Haskell Cavalo Forte Shampoo + Condicionador 300ml",
+        brand: "Haskell",
+        category: "kit",
+        price: 50.00,
+        badge: "",
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_851096-MLU78921790577_092024-F.webp",
+        description: "O Kit Haskell Cavalo Forte oferece força, brilho e crescimento para os cabelos. Enriquecido com Biotina, Pantenol e Queratina, reconstrói a fibra capilar, auxilia no crescimento saudável e reduz a quebra. Contém: 01 Shampoo 300ml e 01 Condicionador 300ml."
+    },
+    {
+        id: 30,
+        name: "Kit Elseve L'Oréal Paris Collagen Lifter: Shampoo + Condicionador",
+        brand: "L'Oréal Paris",
+        category: "kit",
+        price: 40.00,
+        badge: "",
+        image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/KT005427/cbee1eb1-70e9-43b7-a519-2360ae047c46-kt005427-20078387-20078422.png",
+        description: "Kit com shampoo e condicionador para cabelos afinados e sem volume. Elseve L'Oréal Paris Collagen® Lifter proporciona volume por 72h e maciez extrema. Preenche a fibra capilar, encorpa os fios e devolve o movimento natural sem pesar."
     }
 ];
 
@@ -618,6 +638,26 @@ function init() {
                 badge: "",
                 image: "https://americanas.vtexassets.com/arquivos/ids/452276-1280-auto/7490175809_1SZ.webp?v=638750824953000000&quality=9",
                 description: "O Kit Elseve Glycolic Gloss de L'Oréal Paris (Loreal) proporciona cabelos visivelmente mais saudáveis, macios e com um brilho gloss extraordinário que resiste a até 6 lavagens. Sua fórmula inovadora enriquecida com Ácido Glicólico combate a porosidade e sela as cutículas capilares. Contém: 01 Shampoo 375ml e 01 Condicionador 170ml."
+            },
+            {
+                id: 29,
+                name: "Kit Haskell Cavalo Forte Shampoo + Condicionador 300ml",
+                brand: "Haskell",
+                category: "kit",
+                price: 50.00,
+                badge: "",
+                image: "https://http2.mlstatic.com/D_NQ_NP_2X_851096-MLU78921790577_092024-F.webp",
+                description: "O Kit Haskell Cavalo Forte oferece força, brilho e crescimento para os cabelos. Enriquecido com Biotina, Pantenol e Queratina, reconstrói a fibra capilar, auxilia no crescimento saudável e reduz a quebra. Contém: 01 Shampoo 300ml e 01 Condicionador 300ml."
+            },
+            {
+                id: 30,
+                name: "Kit Elseve L'Oréal Paris Collagen Lifter: Shampoo + Condicionador",
+                brand: "L'Oréal Paris",
+                category: "kit",
+                price: 40.00,
+                badge: "",
+                image: "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_avif,fl_progressive,q_auto:eco,w_800/v1/imagens/product/KT005427/cbee1eb1-70e9-43b7-a519-2360ae047c46-kt005427-20078387-20078422.png",
+                description: "Kit com shampoo e condicionador para cabelos afinados e sem volume. Elseve L'Oréal Paris Collagen® Lifter proporciona volume por 72h e maciez extrema. Preenche a fibra capilar, encorpa os fios e devolve o movimento natural sem pesar."
             }
         ];
 
