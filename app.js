@@ -248,7 +248,7 @@ const defaultProducts = [
         name: "L'Oréal Paris Elseve Óleo Extraordinário 100ml",
         brand: "L'Oréal Paris",
         category: "oleo",
-        price: 0.00,
+        price: 20.00,
         badge: "Destaque",
         image: "https://http2.mlstatic.com/D_NQ_NP_2X_891488-MLA111876262926_062026-F.webp",
         description: "Leave In Anti Frizz, Protetor Térmico e Tratamento Reconstrutor para todos os tipos de cabelo. O Óleo Extraordinário de L'Oréal Paris (Loreal) é o gesto de beleza que deixa seus cabelos sublimes, proporcionando nutrição, brilho e proteção térmica contra calor de até 230°C."
